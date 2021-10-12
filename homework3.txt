@@ -1,0 +1,47 @@
+class homework3
+{
+	public static void main(String[] args) 
+	{
+ 	double choicenum;
+
+ 	Scanner sc = new Scanner(System.in);
+            System.out.println("몇 개의 수를 입력할 예정인가요?: ");
+	choicenum = sc.nextDouble();
+
+		{
+		double firstinput;
+		Scanner sc = new Scanner(System.in);
+
+		for (int i = 0 ; i < choicenum.length ; i++ )
+		{
+			System.out.print("수를 입력하세요 : ");
+			firstinput[i] = sc.nextInt();
+		}
+
+		System.out.println("최대값 : " + getMaxValue(firstinput));
+		System.out.println("최소값 : " + getMinValue(firstinput));
+	}
+
+	public static int getMaxValue(int secondinput){
+		int max = secondinput[0];
+		for (int i = 0; i < secondinput.length ; i++ )
+		{
+			if (secondinput[i] > max)
+			{
+				max = secondinput[i];
+			}
+		}
+		return max;
+	}
+
+		public static int getMinValue(int secondinput){
+		int min = secondinput[0];
+		for (int i = 0; i < secondinput.length ; i++ )
+			{
+			if(secondinput[i] < min){
+				min = secondinput[i];
+			}
+		}	
+		return min;
+	}
+}
